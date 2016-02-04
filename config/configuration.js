@@ -1,10 +1,10 @@
 var bodyParser = require('body-parser');
 module.exports = function (app, mongoose) {
 
-    app.set('teleBotLink', 'https://api.telegram.org/bot182492589:AAEs8klS3o14gMjXhXL4BI5e-7vdLUimOWU')
+    app.set('teleBotLink', 'https://api.telegram.org/botxxxxxxxxx')
 
     //Database connection string
-    app.set('db', 'mongodb://Suryadeep:Surya-23121994@ds033285.mongolab.com:33285/mongocloud');
+    app.set('db', 'mongodb://xxxxxxxx:xxxxxxxx/mongocloud');
 
     //Using midleware to parse the body properly
     app.use(bodyParser.urlencoded({ extended: false }));
