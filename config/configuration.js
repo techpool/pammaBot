@@ -1,4 +1,5 @@
-module.exports = function (app) {
+var bodyParser = require('body-parser');
+module.exports = function (app, mongoose) {
 
     //Database connection string
     app.set('db', 'mongodb://Suryadeep:Surya-23121994@ds033285.mongolab.com:33285/mongocloud');
