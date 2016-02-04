@@ -1,0 +1,15 @@
+{
+  "name": "pammabot",
+  "version": "1.0.0",
+  "description": "A chat bot for pamela to help her keep things organized",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suryadeep Pal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.1"
+  }
+}
