@@ -7,6 +7,11 @@ var message = mongoose.Schema({
     },
     messageId: {
         type: Number,
+        required: true,
+        unique: true
+    },
+    chatTitle: {
+        type: String,
         required: true
     },
     timestamp: {
