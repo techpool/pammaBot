@@ -6,8 +6,8 @@ module.exports = function (app, mongoose) {
 
 
     //Database connection string
-    // app.set('db', 'mongodb://Suryadeep:Surya-23121994@ds033285.mongolab.com:33285/mongocloud');
-    app.set('db', 'mongodb://localhost:27017/pammabot');
+    app.set('db', 'mongodb://Suryadeep:Surya-23121994@ds033285.mongolab.com:33285/mongocloud');
+    // app.set('db', 'mongodb://localhost:27017/pammabot');
 
     //Using midleware to parse the body properly
     app.use(bodyParser.urlencoded({ extended: false }));
