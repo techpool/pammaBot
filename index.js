@@ -6,6 +6,9 @@ var mongoose = require('mongoose');
 /* Config files */
 require('./config/configuration.js')(app, mongoose);
 
+/* Global variable to track reply with additional infos */
+ReplyDetector = require('./config/globalReplyVariables.js');
+
 /* Library Files for handling messages */
 require('./lib/incomingMessages.js')(app);
 
