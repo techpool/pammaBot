@@ -6,10 +6,19 @@ var mongoose = require('mongoose');
 /* Config files */
 require('./config/configuration.js')(app, mongoose);
 
+/* Global variable to track reply with additional infos */
+ReplyDetector = require('./config/globalReplyVariables.js');
+
 /* Library Files for handling messages */
 require('./lib/incomingMessages.js')(app);
-Outgoing = require('./lib/outgoingMessages.js');
+
+
+ForcedReply = require('./lib/forcedReply.js');
+ReplyHandler = require('./lib/replyHandler.js');
 StoreAndRetrieve = require('./lib/storeAndRetrieveMessages.js');
+
+/* Utility functions for commonly used functionality */
+Utility = require('./lib/utilFunctions.js');
 
 /* Models for messages */
 Messages = require('./models/Messages.js')
