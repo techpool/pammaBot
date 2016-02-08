@@ -1,4 +1,5 @@
 module.exports = {
     type: false,
-    chatTitle: null
+    chatTitle: null,
+    msgIdToUpdate: null
 }
